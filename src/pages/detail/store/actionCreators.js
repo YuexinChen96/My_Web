@@ -12,7 +12,7 @@ export const getDetail = (id) => {
 		axios.get('/api/detail.json?id=' + id).then((res)=>{
 			const result = res.data.data;
 			for (var i=0;i<result.length;i++){
-				if (result[i].id === id){
+				if (result[i].id == id){
 					var t_title = result[i].title;
 					var t_content = result[i].content;
 				}
