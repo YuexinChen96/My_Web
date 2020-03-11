@@ -27,10 +27,18 @@ export const Content = styled.div`
 		margin: 25px 0;
 		font-size: 16px;
 		line-height: 30px;
+		text-indent: 2em;
 	}
 
 	b{
 		font-weight: bold;
+	}
+	h1{
+		font-size: 40px;
+		text-align: center;
+	}
+	video{
+		margin-top: 30px;
 	}
 
 `

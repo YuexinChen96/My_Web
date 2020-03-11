@@ -11,6 +11,8 @@ class Detail extends PureComponent{
 				<Content
 				dangerouslySetInnerHTML={{__html: this.props.content}}
 				></Content>
+				<video height="480" width="850" src={this.props.video} controls="controls">
+				</video>
 			</DetailWrapper>
 		)
 	}
@@ -22,7 +24,8 @@ class Detail extends PureComponent{
 
 const mapState = (state) => ({
 	title: state.getIn(['detail','title']),
-	content: state.getIn(['detail','content'])
+	content: state.getIn(['detail','content']),
+	video: state.getIn(['detail','video'])
 });
 
 const mapDispatch = (dispatch) => ({

@@ -6,7 +6,7 @@ import {
 import Movie from './components/Movie';
 import Topic from './components/Topic';
 import Recommend from './components/Recommend';
-import Music from './components/Music';
+import Gif from './components/Gif';
 import {actionCreators} from './store';
 import axios from 'axios';
 
@@ -30,7 +30,7 @@ class Home extends PureComponent{
 					<Movie />
 				</HomeLeft>
 				<HomeRight>
-				<Music></Music>
+				<Gif></Gif>
 				<Recommend></Recommend>
 				</HomeRight>
 				{this.props.showScroll ?

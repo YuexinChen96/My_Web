@@ -3,7 +3,8 @@ import * as constants from './constants';
 
 const defaultState = fromJS({
 	title: '',
-	content: ''
+	content: '',
+	video: ''
 });
 
 export default (state = defaultState, action) => {
@@ -11,7 +12,8 @@ export default (state = defaultState, action) => {
 		case constants.CHANGE_DETAIL:
 			return state.merge({
 				title: action.title,
-				content: action.content
+				content: action.content,
+				video: action.video
 			})
 		default:
 			return state;

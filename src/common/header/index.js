@@ -70,8 +70,12 @@ class Header extends Component{
 				<Logo />
 				</Link>
 				<Nav>
+					<Link to={'/intro'}>
 					<NavItem className='left' acitve>Intro</NavItem>
+					</Link>
+					<Link to={'/music'}>
 					<NavItem className='left'>Musics</NavItem>
+					</Link>
 					{
 						login ?
 						<NavItem 

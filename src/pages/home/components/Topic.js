@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import {TopicWrapper,TopicItem} from '../style';
+import { Link } from 'react-router-dom';
 
 class Topic extends PureComponent{
 	render(){
@@ -9,6 +10,7 @@ class Topic extends PureComponent{
 				{
 					this.props.list.map((item)=>{
 						return(
+							<Link key={item.get('id')} to={'/'+item.get('title')+'/'}>
 							<TopicItem key={item.get('id')}>
 							<img 
 							className='topic-pic'
@@ -16,6 +18,7 @@ class Topic extends PureComponent{
 							alt='' 
 							/>
 							{item.get('title')}</TopicItem>
+							</Link>
 						)
 					})
 				}

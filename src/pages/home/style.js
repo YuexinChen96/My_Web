@@ -82,7 +82,7 @@ export const ListInfo = styled.div`
 	}
 `;
 
-export const MusicBox = styled.div`
+export const GifBox = styled.div`
 	margin-top: 60px;
 	width: 300px;
 	height: 170px;
